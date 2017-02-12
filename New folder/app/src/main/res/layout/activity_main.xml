@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout android:keepScreenOn="true"  xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@id/layout_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg04"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip" 
+            android:layout_weight="0.75"
+            android:orientation="horizontal">
+            <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:layout_marginTop="30dp"
+		        android:layout_marginRight="30.0dip"
+		        android:orientation="horizontal" >
+				<LinearLayout 
+				    android:layout_width="0dp"
+				    android:layout_height="match_parent"
+				    android:orientation="vertical"
+				    android:layout_weight="0.85">
+				    <TextView
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:text="LATEST HITS"
+				            android:gravity="left"
+				            android:layout_marginLeft="30dp"
+				            android:textSize="50.0sp" />
+				</LinearLayout>
+
+				<LinearLayout
+				    android:layout_width="0dp"
+				    android:layout_height="match_parent"
+				    android:layout_marginRight="20dp"
+				    android:layout_weight="0.15"
+				    android:orientation="vertical" >
+
+				        <TextView
+				            android:id="@+id/txt_clock"
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:text="00:00"
+				            android:gravity="left"
+				            android:textSize="43.0sp" />
+			
+				        <TextView
+				            android:id="@+id/txt_date"
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:text="Tuesday Jan 06, 2015"
+				            android:gravity="left"
+				            android:layout_marginTop="5dp" 
+				            android:textSize="17.0sp"/>
+				        
+				         <LinearLayout
+					         android:layout_width="match_parent"
+					         android:layout_height="40dp"
+					         android:orientation="horizontal" >
+					         <TextView
+					            android:id="@+id/txt_city"
+					            android:layout_width="wrap_content"
+					            android:layout_height="match_parent"
+					            android:text="Dandong"
+					            android:gravity="left|center_vertical"
+					            android:textSize="22.0sp" />
+							<LinearLayout 
+							    android:layout_width="wrap_content"
+							    android:layout_height="match_parent"
+							    android:orientation="horizontal"
+							    android:layout_marginLeft="5dp"
+							    android:gravity="center">
+								<ImageView
+						            android:id="@+id/img_weather"
+						            android:layout_width="wrap_content"
+						            android:layout_height="wrap_content"
+						            android:gravity="center"
+						            android:layout_gravity="center"/>    
+							</LinearLayout>
+				        </LinearLayout>
+				        
+				        <LinearLayout
+					        android:layout_width="match_parent"
+					        android:layout_height="wrap_content"
+					        android:layout_marginTop="5dp"
+					        android:background="@drawable/separateline" 
+					        android:orientation="vertical" >
+					        
+					    </LinearLayout>
+					    
+					    <TextView
+					        android:id="@+id/txt_weather"
+					        android:layout_marginTop="5dp"
+					        android:layout_width="match_parent"
+					        android:layout_height="wrap_content"
+					        android:text="Sunny, 14°C"
+					        android:gravity="left"              
+					        android:textSize="22.0sp" />
+				        
+					    <TextView
+					        android:id="@+id/txt_weather_limit"
+					        android:layout_marginTop="15dp"
+					        android:layout_width="match_parent"
+					        android:layout_height="wrap_content"
+					        android:text="High:21°C, Low: 16°C"
+					        android:gravity="left"              
+					        android:textSize="16.0sp" />
+					    
+					    <TextView
+					        android:id="@+id/txt_weather_wind"
+					        android:layout_marginTop="5dp"
+					        android:layout_width="match_parent"
+					        android:layout_height="wrap_content"
+					        android:text="Wind: West at 6.4KPH"
+					        android:gravity="left"              
+					        android:textSize="16.0sp" />
+					    
+					    <RelativeLayout
+					        android:layout_width="match_parent"
+					        android:layout_height="match_parent"
+					        android:gravity="bottom">
+					        <LinearLayout 
+					            android:layout_width="fill_parent"
+					            android:layout_height="wrap_content"
+					            android:orientation="vertical"
+					            android:layout_marginBottom="20.0dip"
+					            >
+					            <LinearLayout
+							        android:layout_width="match_parent"
+							        android:layout_height="wrap_content"
+							        android:layout_marginTop="15dp"
+							        android:background="@drawable/msgbg1" 
+							        android:orientation="vertical" >
+							    </LinearLayout>
+							    
+						        <LinearLayout
+							        android:layout_width="match_parent"
+							        android:layout_height="wrap_content"
+							        android:background="@drawable/snbg" 
+							        android:orientation="vertical"
+							        android:gravity="center" >
+							        <TextView
+							            android:id="@id/txt_sn"
+							            android:layout_width="match_parent"
+							            android:layout_height="match_parent"            
+							            android:textColor="@color/white"      
+							            android:gravity="center"    
+							            android:textSize="17.0sp" />
+							    </LinearLayout>
+					        </LinearLayout>
+					    </RelativeLayout>
+				</LinearLayout>
+		    </LinearLayout>
+        </LinearLayout>
+
+            <LinearLayout
+		        android:id="@+id/buttons"
+		        android:layout_width="match_parent"
+		        android:layout_height="0dip"
+		        android:background="#A0000000"
+		        android:gravity="center"
+		        android:layout_weight="0.25"
+		        android:orientation="vertical">
+
+		        <LinearLayout
+		            android:layout_width="match_parent"
+		            android:layout_height="0dp"
+		            android:layout_weight="0.3"
+		            android:orientation="horizontal" >
+					<RelativeLayout 
+					    android:id="@+id/main_highlight_item"
+					    android:layout_width="wrap_content"
+					    android:layout_height="fill_parent"
+					    android:layout_marginLeft="1.0dip">
+						<TextView
+						    android:id="@+id/highlight_item_text"
+						    android:layout_width="wrap_content"
+						    android:layout_height="wrap_content"
+						    android:text="+ Real Time Tv Broadcasting"
+						    android:textSize="24.0sp"
+						    android:textColor="@color/white"
+						    android:layout_above="@+id/highlight_item_img"
+						    android:layout_marginLeft="50.0dip"/>"
+						<ImageView
+						    android:id="@+id/highlight_item_img"
+						    android:layout_width="wrap_content"
+						    android:layout_height="wrap_content"
+						    android:src="@drawable/nav_tip"
+						    android:layout_alignParentBottom="true"/>"
+					</RelativeLayout>
+					
+			    </LinearLayout>
+			    
+		        <ImageView
+					android:layout_width="match_parent"
+					android:layout_height="0dp"
+					android:src="@drawable/separateline"
+					android:orientation="vertical"
+					android:layout_weight="0.01"
+					android:scaleType="fitXY" />
+				
+			    <LinearLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="0dp"
+			        android:gravity="center"
+			        android:orientation="horizontal"
+			        android:layout_weight="0.69">
+
+				    <LinearLayout
+				        android:layout_width="0dp"
+				        android:layout_height="match_parent"
+				        android:orientation="horizontal"
+				        android:gravity="center"
+				        android:layout_weight="0.1428">
+						<LinearLayout
+						    android:id="@+id/layout_launcher_tv"
+						    android:layout_width="80dp"
+						    android:layout_height="90dp"
+						    android:orientation="vertical"
+						    >
+							<ImageView
+					            android:id="@id/img_launcher_tv"
+					            android:layout_width="match_parent"
+					            android:layout_height="0dp"
+					            android:focusable="true"
+					            android:src="@drawable/nav_01"
+					            android:layout_weight="0.7" />
+							<TextView
+					            android:layout_width="match_parent"
+					            android:layout_height="0dp"
+					            android:gravity="center"
+					            android:textSize="18.0sp"
+					            android:textStyle="bold"
+					            android:text="TV"
+					            android:layout_weight="0.3" />
+						</LinearLayout>
+			        </LinearLayout>
+			        <LinearLayout
+				        android:layout_width="0dp"
+				        android:layout_height="match_parent"
+				        android:orientation="vertical"
+				        android:gravity="center"
+				        android:layout_weight="0.1428">
+						<LinearLayout
+						    android:id="@+id/layout_launcher_movies"
+						    android:layout_width="80dp"
+						    android:layout_height = "90dp"
+						    android:orientation="vertical"
+						    >
+							<ImageView
+					            android:id="@id/img_launcher_movies"
+					            android:layout_width="match_parent"
+					            android:layout_height="0dp"
+					            android:focusable="true"
+					            android:layout_weight="0.7"
+					            android:src="@drawable/nav_02" />
+							<TextView
+					            android:layout_width="match_parent"
+					            android:layout_height="0dp"
+					            android:text="MOVIES"
+					            android:gravity="center"
+					            android:textStyle="bold"
+					            android:textSize="18.0sp"
+					            android:layout_weight="0.3" />
+						</LinearLayout>
+					</LinearLayout>
+
+					<LinearLayout
+					    android:layout_width="0dp"
+					    android:layout_height="match_parent"
+					    android:layout_weight="0.1428"
+					    android:gravity="center"
+					    android:orientation="vertical" >
+
+				        <LinearLayout
+				            android:id="@+id/layout_launcher_drama"
+						    android:layout_width="80dp"
+						    android:layout_height = "90dp"
+						    android:orientation="vertical"
+						    >
+							<ImageView
+					            android:id="@id/img_launcher_drama"
+					            android:layout_width="match_parent"
+					            android:layout_height="0dp"
+					            android:focusable="true"
+					            android:src="@drawable/nav_03"
+					            android:layout_weight="0.7" />
+							<TextView
+					            android:layout_width="match_parent"
+					            android:layout_height="0dp"
+					            android:text="DRAMA"
+					            android:textStyle="bold"
+					            android:gravity="center"
+					            android:textSize="18.0sp"
+					            android:layout_weight="0.3" />
+						</LinearLayout>
+					</LinearLayout>
+					<LinearLayout
+				        android:layout_width="0dp"
+				        android:layout_height="match_parent"
+				        android:orientation="vertical"
+				        android:gravity="center"
+				        android:layout_weight="0.1428">
+				        <LinearLayout
+				            android:id="@+id/layout_launcher_music"
+						    android:layout_width="80dp"
+						    android:layout_height="90dp"
+						    android:orientation="vertical"
+						    >
+							<ImageView
+					            android:id="@+id/img_launcher_music"
+					            android:layout_width="match_parent"
+					            android:layout_height="0dp"
+					            android:focusable="true"
+					            android:src="@drawable/nav_07"
+					            android:layout_weight="0.7" />
+							<TextView
+					            android:layout_width="match_parent"
+					            android:layout_height="0dp"
+					            android:text="MUSIC"
+					            android:textStyle="bold"
+					            android:gravity="center"
+					            android:textSize="18.0sp"
+					            android:layout_weight="0.3" />
+						</LinearLayout>
+			        </LinearLayout> 
+					<LinearLayout
+				        android:layout_width="0dp"
+				        android:layout_height="match_parent"
+				        android:orientation="vertical"
+				        android:gravity="center"
+				        android:layout_weight="0.1428">
+				        <LinearLayout
+				            android:id="@+id/layout_launcher_apps"
+						    android:layout_width="80dp"
+						    android:layout_height = "90dp"
+						    android:orientation="vertical"
+						    >
+							<ImageView
+					            android:id="@+id/img_launcher_apps"
+					            android:layout_width="match_parent"
+					            android:layout_height="0dp"
+					            android:focusable="true"
+					            android:src="@drawable/nav_04"
+					            android:layout_weight="0.7" />
+							<TextView
+					            android:layout_width="match_parent"
+					            android:layout_height="0dp"
+					            android:text="APPS"
+					            android:textStyle="bold"
+					            android:gravity="center"
+					            android:textSize="18.0sp"
+					            android:layout_weight="0.3" />
+						</LinearLayout>
+			        </LinearLayout> 
+			        <LinearLayout
+				        android:layout_width="0dp"
+				        android:layout_height="match_parent"
+				        android:orientation="vertical"
+				        android:gravity="center"
+				        android:layout_weight="0.1428">
+				        <LinearLayout
+				            android:id="@+id/layout_launcher_youtube"
+						    android:layout_width="80dp"
+						    android:layout_height = "90dp"
+						    android:orientation="vertical"
+						    >
+							<ImageView
+					            android:id="@+id/img_launcher_youtube"
+					            android:layout_width="match_parent"
+					            android:layout_height="0dp"
+					            android:focusable="true"
+					            android:src="@drawable/nav_06"
+					            android:layout_weight="0.7" />
+							<TextView
+					            android:layout_width="match_parent"
+					            android:layout_height="0dp"
+					            android:text="YouTube"
+					            android:textStyle="bold"
+					            android:gravity="center"
+					            android:textSize="18.0sp"
+					            android:layout_weight="0.3" />
+						</LinearLayout>
+					</LinearLayout>
+					<LinearLayout
+				        android:layout_width="0dp"
+				        android:layout_height="match_parent"
+				        android:orientation="vertical"
+				        android:gravity="center"
+				        android:layout_weight="0.1432">
+				        <LinearLayout
+				            android:id="@+id/layout_launcher_setting"
+						    android:layout_width="80dp"
+						    android:layout_height = "90dp"
+						    android:orientation="vertical"
+						    >
+							<ImageView
+					            android:id="@+id/img_launcher_setting"
+					            android:layout_width="match_parent"
+					            android:layout_height="0dp"
+					            android:focusable="true"
+					            android:src="@drawable/nav_05"
+					            android:layout_weight="0.7" />
+							<TextView
+					            android:layout_width="match_parent"
+					            android:layout_height="0dp"
+					            android:text="Settings"
+					            android:textStyle="bold"
+					            android:gravity="center"
+					            android:textSize="18.0sp"
+					            android:layout_weight="0.3" />
+						</LinearLayout>
+					</LinearLayout>
+			    </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>

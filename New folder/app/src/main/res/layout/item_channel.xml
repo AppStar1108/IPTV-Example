@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="300.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+ <LinearLayout  
+     android:id="@+id/txt_channel_img"
+     android:gravity="center" 
+     android:orientation="horizontal"
+     android:layout_width="70.0dp" 
+     android:layout_height="70.0dip">   
+      <FrameLayout  
+	     android:gravity="center" 
+	     android:layout_width="fill_parent" 
+	     android:layout_height="fill_parent">
+	       <com.redorange.motutv1.model.RoundedImageView
+		        android:id="@+id/txt_channel_sort"
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:layout_gravity="center"        
+		        android:gravity="center"
+		        android:focusable="false"
+		        android:layout_margin="1.0dip"
+		    	android:focusableInTouchMode="false"
+		    	android:scaleType="fitXY"/>
+	       <ImageView
+		        android:id="@+id/txt_channel_sort_border"
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:layout_gravity="center"        
+		        android:gravity="center"
+		        android:focusable="false"
+		        android:src="@drawable/tv02"
+		    	android:focusableInTouchMode="false"
+		    	android:scaleType="fitXY"/>
+     </FrameLayout>
+	</LinearLayout>
+</LinearLayout>

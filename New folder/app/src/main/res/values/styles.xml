@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppBaseTheme" parent="@android:style/Theme.Light" />
+    <style name="AppTheme" parent="@style/AppBaseTheme">
+        <item name="android:windowBackground">@drawable/bg</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:textColor">#ff000000</item>
+    </style>
+    <style name="btn_favorite">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/movie_selector_item_detail_btn</item>
+        <item name="android:padding">10.0dip</item>
+        <item name="android:focusable">true</item>
+        <item name="android:layout_width">180.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:drawablePadding">15.0dip</item>
+    </style>
+    <style name="update_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    <style name="dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@drawable/tm</item>
+        <item name="android:windowFrame">@null</item>
+    </style>
+</resources>

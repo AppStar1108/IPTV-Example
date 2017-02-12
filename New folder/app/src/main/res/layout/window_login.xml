@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/login"
+    android:layout_width="500.0dip"
+    android:layout_height="260.0dip"
+    android:background="@drawable/black50"
+    android:orientation="vertical" >
+	
+    <TextView 
+        android:textSize="30.0sp" 
+        android:textColor="@color/white" 
+        android:gravity="center_horizontal" 
+        android:layout_gravity="center" 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="30.0dip" 
+        android:text="Please Activate Your Account" />
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="2.0dip"
+        android:background="@color/white"
+        android:layout_marginTop="5.0dip"
+        android:layout_marginLeft="20.0dip"
+        android:layout_marginRight="20.0dip" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30.0dip"
+        android:gravity="center_horizontal">
+        <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="fill_parent" 
+	        android:textSize="28.0sp" 
+	        android:textColor="@color/white" 
+	        android:text="Box ID :"/>
+        <TextView
+            android:id="@id/txt_content" 
+	        android:layout_width="wrap_content" 
+	        android:layout_height="fill_parent" 
+	        android:layout_marginLeft="20.0dip" 
+	        android:textSize="28.0sp" 
+	        android:textColor="@color/white" 
+	        android:text="Serial NO"/>
+    </LinearLayout>
+    <LinearLayout 
+        android:gravity="center_horizontal" 
+        android:orientation="horizontal" 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+        <Button
+            android:id="@id/btn_reconnect"
+            android:layout_width="wrap_content"
+            android:layout_height="60.0dip"
+            android:background="@drawable/selector_loginbtn"
+            android:padding="4.0dip"
+            android:text="Retry"
+            android:textColor="@color/white"
+            android:textSize="30.0sp" />
+    </LinearLayout>
+</LinearLayout>

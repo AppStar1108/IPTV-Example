@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout 
+        android:id="@+id/search_channel_item_layout"
+        android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_marginLeft="10.0dip">
+    	<TextView
+	        android:id="@+id/search_channel_name"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:background="@drawable/selector_typename"
+	        android:gravity="left|center_vertical"
+	        android:singleLine="true"
+	        android:text="Index"
+	        android:textColor="@color/white"
+	        android:textSize="24.0sp"/>
+	</LinearLayout>
+</LinearLayout>
