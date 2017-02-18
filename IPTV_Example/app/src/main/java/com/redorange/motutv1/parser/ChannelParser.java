@@ -187,8 +187,7 @@ public class ChannelParser
           boolean bool6 = localJSONObject3.getBoolean("isShowLogoOnBox");
           String str4 = localJSONObject3.getString("logo");
           if(!str4.toLowerCase().contains("http:"))
-        	  str4 = "http://extremeiptv.com:8080" + str4;
-              //str4 = "http://62.210.182.14:8080" + str4;
+        	  str4 = "http://62.210.182.14:8080" + str4;
           String logo_img  = downloadImage(str4);
           
           int i3 = localJSONObject3.getInt("mode");

@@ -63,8 +63,7 @@ public String getSn()
   {
     String str = URLEncoder.encode(paramString);
     //return "http://69.64.62.156:8080/channel/stb/checkTermOfValidity.htm?str=" + str;
-    //return "http://62.210.182.14:8080//channel/stb/checkTermOfValidity.htm?str=" + str;
-    return "http://extremeiptv.com:8080//channel/stb/checkTermOfValidity.htm?str=" + str;
+    return "http://62.210.182.14:8080//channel/stb/checkTermOfValidity.htm?str=" + str;
   }
 
   public String getValue(String paramString)

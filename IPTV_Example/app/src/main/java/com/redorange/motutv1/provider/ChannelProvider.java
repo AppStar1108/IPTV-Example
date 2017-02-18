@@ -80,8 +80,8 @@ public class ChannelProvider
 		  }
 		  p2.onSuccess(localList);
 		  p2.onFinish();*/
-    //  HttpUtil.get("http://62.210.182.14:8080/channel_resource/channel/liveListNew.html", new AsyncHttpResponseHandler()
-	  HttpUtil.get("http://extremeiptv.com:8080/channel_resource/channel/liveListNew.html", new AsyncHttpResponseHandler()
+
+       HttpUtil.get("http://62.210.182.14:8080/channel_resource/channel/liveListNew.html", new AsyncHttpResponseHandler()
 	  {
 		  public void onFailure(Throwable paramThrowable)
 		  {

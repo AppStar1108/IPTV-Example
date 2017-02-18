@@ -22,8 +22,8 @@ import java.util.HashMap;
 public class EpgDatas {
 
 	public static Array epgdata;
-//	private static String epg_url = "http://62.210.182.14:8080/channel_resource/live/program.html";
-	private static String epg_url = "http://extremeiptv.com:8080/channel_resource/live/program.html";
+    private static String epg_url = "http://62.210.182.14:8080/channel_resource/live/program.html";
+
 
 	public static JSONObject myepgdata;
 	public static JSONArray myepgreleaseList;
